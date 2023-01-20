@@ -6,4 +6,25 @@
 
 body {
   background-color: hsl(30, 38%, 92%);
+  font-family: ;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background-color: hsl(0, 0%, 100%);
+  width: 50rem;
+  height: 33.117rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.67rem;
+  border-radius: 10px;
+}
+
+.main-image {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: 100%;
 }
