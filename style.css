@@ -38,6 +38,27 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/*prices section*/
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.new-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 2rem;
+}
+
+.old-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  text-decoration: line-through;
+}
+
 /*add to cart button*/
 .add-to-cart {
   font-family: "Montserrat", sans-serif;
@@ -59,4 +80,5 @@ body {
 
 p {
   font-size: 0.875rem;
+  color: #6c7289;
 }
