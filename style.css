@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 p {
@@ -19,8 +20,7 @@ p {
 
 .main-container {
   background-color: hsl(0, 0%, 100%);
-  width: 42rem;
-  height: 31.117rem;
+  max-width: 42rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 10px;
@@ -28,7 +28,7 @@ p {
 
 .main-image {
   border-radius: 10px 0 0 10px;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -97,4 +97,30 @@ p {
 .add-to-cart:hover {
   cursor: pointer;
   background-color: #1a4032;
+}
+
+/*phone*/
+
+@media screen and (max-width: 450px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-content {
+    gap: 0.5rem;
+    padding: 1.5rem;
+  }
+
+  .main-image {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product-description {
+    margin: 0.6rem 0 1rem 0;
+  }
+
+  .price {
+    margin-bottom: 1rem;
+  }
 }
